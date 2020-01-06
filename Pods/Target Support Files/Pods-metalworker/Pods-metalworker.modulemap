@@ -1,0 +1,6 @@
+framework module Pods_metalworker {
+  umbrella header "Pods-metalworker-umbrella.h"
+
+  export *
+  module * { export * }
+}

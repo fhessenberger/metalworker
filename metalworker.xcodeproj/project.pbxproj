@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FBF92FDC280F75F4041E777 /* Pods_metalworker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7C8C80C1001150CFF56ED3 /* Pods_metalworker.framework */; };
+		DC15A2E623C3C1FC001AC168 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC15A2E523C3C1FC001AC168 /* WebService.swift */; };
+		DC15A2E823C3C864001AC168 /* WebResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC15A2E723C3C864001AC168 /* WebResource.swift */; };
 		DC87311B23C3C19C00735524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87311A23C3C19C00735524 /* AppDelegate.swift */; };
 		DC87311D23C3C19C00735524 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87311C23C3C19C00735524 /* SceneDelegate.swift */; };
 		DC87311F23C3C19C00735524 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87311E23C3C19C00735524 /* ContentView.swift */; };
@@ -16,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C8976AE2A29C40200D6551F /* Pods-metalworker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-metalworker.release.xcconfig"; path = "Target Support Files/Pods-metalworker/Pods-metalworker.release.xcconfig"; sourceTree = "<group>"; };
+		6CAF58BBDDC72EAA2ADA837E /* Pods-metalworker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-metalworker.debug.xcconfig"; path = "Target Support Files/Pods-metalworker/Pods-metalworker.debug.xcconfig"; sourceTree = "<group>"; };
+		CF7C8C80C1001150CFF56ED3 /* Pods_metalworker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_metalworker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC15A2E523C3C1FC001AC168 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		DC15A2E723C3C864001AC168 /* WebResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebResource.swift; sourceTree = "<group>"; };
 		DC87311723C3C19C00735524 /* metalworker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metalworker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC87311A23C3C19C00735524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC87311C23C3C19C00735524 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FBF92FDC280F75F4041E777 /* Pods_metalworker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D50B13271D09862BD84E7A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CAF58BBDDC72EAA2ADA837E /* Pods-metalworker.debug.xcconfig */,
+				4C8976AE2A29C40200D6551F /* Pods-metalworker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A3C8BA2EDCB5703B59DA4351 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF7C8C80C1001150CFF56ED3 /* Pods_metalworker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DC87310E23C3C19C00735524 = {
 			isa = PBXGroup;
 			children = (
 				DC87311923C3C19C00735524 /* metalworker */,
 				DC87311823C3C19C00735524 /* Products */,
+				2D50B13271D09862BD84E7A1 /* Pods */,
+				A3C8BA2EDCB5703B59DA4351 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,11 +86,13 @@
 			children = (
 				DC87311A23C3C19C00735524 /* AppDelegate.swift */,
 				DC87311C23C3C19C00735524 /* SceneDelegate.swift */,
+				DC15A2E523C3C1FC001AC168 /* WebService.swift */,
 				DC87311E23C3C19C00735524 /* ContentView.swift */,
 				DC87312023C3C19C00735524 /* Assets.xcassets */,
 				DC87312523C3C19C00735524 /* LaunchScreen.storyboard */,
 				DC87312823C3C19C00735524 /* Info.plist */,
 				DC87312223C3C19C00735524 /* Preview Content */,
+				DC15A2E723C3C864001AC168 /* WebResource.swift */,
 			);
 			path = metalworker;
 			sourceTree = "<group>";
@@ -82,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC87312B23C3C19C00735524 /* Build configuration list for PBXNativeTarget "metalworker" */;
 			buildPhases = (
+				4CAC08A5C4DA5E1488F3EAE8 /* [CP] Check Pods Manifest.lock */,
 				DC87311323C3C19C00735524 /* Sources */,
 				DC87311423C3C19C00735524 /* Frameworks */,
 				DC87311523C3C19C00735524 /* Resources */,
+				36B78A2A394A2297986405C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +173,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36B78A2A394A2297986405C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-metalworker/Pods-metalworker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-metalworker/Pods-metalworker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-metalworker/Pods-metalworker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CAC08A5C4DA5E1488F3EAE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-metalworker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC87311323C3C19C00735524 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -148,7 +222,9 @@
 			files = (
 				DC87311B23C3C19C00735524 /* AppDelegate.swift in Sources */,
 				DC87311D23C3C19C00735524 /* SceneDelegate.swift in Sources */,
+				DC15A2E623C3C1FC001AC168 /* WebService.swift in Sources */,
 				DC87311F23C3C19C00735524 /* ContentView.swift in Sources */,
+				DC15A2E823C3C864001AC168 /* WebResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +358,7 @@
 		};
 		DC87312C23C3C19C00735524 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CAF58BBDDC72EAA2ADA837E /* Pods-metalworker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +379,7 @@
 		};
 		DC87312D23C3C19C00735524 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C8976AE2A29C40200D6551F /* Pods-metalworker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
